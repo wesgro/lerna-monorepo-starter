@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - '10.15.3'
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH="$HOME/.yarn/bin:$PATH"
+
+cache: yarn
+
+install:
+  - yarn
+
+matrix:
+  include:
+    - name: 'Blog Pipeline'
+      env: PACKAGE_LOCATION=packages/blog
+    - name: 'Shop Pipeline'
+      env: PACKAGE_LOCATION=packages/shop
+
+script:
+  - cd $PACKAGE_LOCATION
+  - yarn test
+  - yarn build

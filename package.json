@@ -1,0 +1,58 @@
+{
+  "name": "lerna-monorepo-starter",
+  "description": "Lerna monorepo starter",
+  "author": "Andrico Karoulla <karoulla.andrico@gmail.com>",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "lerna": "^3.14.1",
+    "react": "16.0.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "run:blog": "lerna run --scope=@lerna-monorepo/blog develop",
+    "run:shop": "lerna run --scope=@lerna-monorepo/shop develop",
+    "run:all": "lerna run develop --stream",
+    "release": "cross-env HUSKY_BYPASS=true lerna publish"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "babel-jest": "^24.0.0",
+    "cross-env": "^5.2.0",
+    "enzyme": "^3.4.1",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "husky": "^2.3.0",
+    "jest": "^24.8.0",
+    "jest-cli": "^24.8.0",
+    "npm-run-all": "^4.1.3",
+    "prettier": "^1.17.1",
+    "react-router-dom": "^4.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "[[ -n $HUSKY_BYPASS ]] || commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
