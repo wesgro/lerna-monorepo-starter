@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "license": "MIT",
   "scripts": {
+    "test": "jest test --config ../../jest-config.json",
     "start": "serve public",
     "build": "gatsby build",
     "develop": "gatsby develop -p 8001"

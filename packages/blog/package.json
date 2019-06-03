@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "test": "jest test --config ../../jest-config.json",
     "start": "serve public/",
     "build": "gatsby build",
     "develop": "gatsby develop"
