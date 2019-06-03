@@ -18,7 +18,7 @@
     "run:blog": "lerna run --scope=@lerna-monorepo/blog develop",
     "run:shop": "lerna run --scope=@lerna-monorepo/shop develop",
     "run:all": "lerna run develop --stream",
-    "release": "cross-env HUSKY_BYPASS=true lerna publish"
+    "release": "cross-env HUSKY_BYPASS=true lerna publish from-git --yes"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
