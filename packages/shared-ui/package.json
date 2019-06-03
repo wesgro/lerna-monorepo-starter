@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-monorepo/shared-ui",
+  "name": "@lerna-monorepo-jakey/shared-ui",
   "version": "0.0.4",
   "main": "index.js",
   "license": "MIT",

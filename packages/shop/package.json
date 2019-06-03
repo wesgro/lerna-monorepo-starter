@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-monorepo/shop",
+  "name": "@lerna-monorepo-jakey/shop",
   "version": "0.0.2",
   "license": "MIT",
   "scripts": {
