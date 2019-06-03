@@ -9,6 +9,9 @@
     "build": "gatsby build",
     "develop": "gatsby develop"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@lerna-monorepo/shared-ui": "^1.0.1",
     "dotenv": "^8.0.0",
