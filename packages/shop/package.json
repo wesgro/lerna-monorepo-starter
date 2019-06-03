@@ -1,6 +1,6 @@
 {
   "name": "@lerna-monorepo-jakey/shop",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "test": "jest test --config ../../jest-config.json",
