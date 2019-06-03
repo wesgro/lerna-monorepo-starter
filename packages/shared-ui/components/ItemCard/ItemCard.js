@@ -43,9 +43,7 @@ export default ({ data, slug }) => (
   <Card>
     <StyledLink to={`/${slug}/${data.id}`}>
       <CardImage />
-      <CardHeading>
-        {data.title}
-      </CardHeading>
+      <CardHeading>{data.title}</CardHeading>
     </StyledLink>
   </Card>
 )
