@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/wesgro/lerna-monorepo-starter/compare/@lerna-monorepo-jakey/shared-ui@1.0.0...@lerna-monorepo-jakey/shared-ui@1.0.1) (2019-06-03)
+
+
+### Bug Fixes
+
+* makes the font size bigger ([e1f10b3](https://github.com/wesgro/lerna-monorepo-starter/commit/e1f10b3))
+
+
+
+
+
 # 1.0.0 (2019-06-03)
 
 
